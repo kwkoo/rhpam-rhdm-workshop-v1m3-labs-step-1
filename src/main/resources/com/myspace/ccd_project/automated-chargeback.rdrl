@@ -1,0 +1,9 @@
+package com.myspace.ccd_project;
+
+import java.lang.Number;
+
+rule "automated-chargeback"
+	dialect "mvel"
+	when
+	then
+end
