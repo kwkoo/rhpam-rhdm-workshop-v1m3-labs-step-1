@@ -5,5 +5,8 @@ import java.lang.Number;
 rule "automated-chargeback"
 	dialect "mvel"
 	when
+		CreditCardHolder( status in ( "Gold", "Platinum" ) )
+		data : FraudData( )
 	then
+		data.setAutomated( true );
 end
